@@ -5,10 +5,10 @@ import Home from './components/Home';
 function App() {
   return (
     <>
-    <Header />
-    <section>
-    <Home />
-    </section>
+      <Header />
+        <section class="movies-container">
+          <Home />
+        </section>
     </>
   );
 }

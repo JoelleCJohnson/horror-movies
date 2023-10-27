@@ -23,12 +23,17 @@ h1 {
     font-family: 'Nosifer', sans-serif;
 }
 
+.movies-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .main-text {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .heading-text {
@@ -50,7 +55,6 @@ h1 {
 
 section {
     background-image: url("./images/Halloween-Graphic-With-Repeating-Pattern-73061155-1.png");
-  
 }
 
 p{
