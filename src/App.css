@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --blood:rgb(144, 7, 7);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(144, 7, 7);
+    flex-direction: column;
+    border-radius: 10px;
+}   
+
+h1 {
+    color:var(--blood);
+    font-family: 'Nosifer', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.heading-text {
+    background-color: #000;
+    color: var(--blood);
+    text-shadow: 0 0 10px #000;
+    font-family: 'Nosifer', sans-serif;
+    padding: 10px;
+    border: 5px solid var(--blood);
+    margin: 5px;
+    border-radius: 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-pic {
+    border: 5px solid var(--blood);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+section {
+    background-image: url("./images/Halloween-Graphic-With-Repeating-Pattern-73061155-1.png");
+  
+}
+
+p{
+    color: var(--blood);
+    font-family: 'Nosifer', sans-serif;
 }
