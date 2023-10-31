@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function SingleMovieComponent(props) {
     return (
@@ -12,20 +12,17 @@ function SingleMovieComponent(props) {
 export default function Home() {
     const [horrorMovies, setHorrorMovies] = useState()
 
-    const buttonClick = () => {
-
+    useEffect(() => {
         fetch('https://api.sampleapis.com/movies/horror')
             .then(res => res.json())
             .then(data => setHorrorMovies(data))
             .catch(err => console.error(err))
+    }, [])
 
-    }
 
     return (
         <>
-            {(!horrorMovies) ?
-                <button onClick={() => buttonClick()}>Get Horror Movies!</button>
-                :
+            {horrorMovies &&
                 horrorMovies.map((singleMovie) => {
                     return (
                         <SingleMovieComponent photo={singleMovie.posterURL} title={singleMovie.title} />
