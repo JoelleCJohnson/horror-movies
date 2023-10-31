@@ -42,10 +42,11 @@ h1 {
     flex-wrap: wrap;
     background-color: black;
     border: 3px solid red;
+    border-radius: 10px;
     flex-grow: 1;
-    margin: 20px 0px;
     max-width: min-content;
     min-width: 325px;
+    margin: 10px 0px;
 }
 
 .heading-text {
